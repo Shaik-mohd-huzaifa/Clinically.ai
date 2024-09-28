@@ -1,0 +1,95 @@
+$primary-button: greenyellow;
+.appointment-container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+    .header{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            height: fit-content;
+            background-color: $primary-button;
+        }
+    }
+    .appointment-list-container{
+        width: 100%;
+        height: 80%;
+        padding-top: 20px;
+        box-sizing: border-box;
+        .appointment{
+            width: 20%;
+            padding: 15px;
+            box-sizing: border-box;
+            border:2px solid #dbdbdb;
+            border-radius: 15px;
+            p{
+                margin: 5px 0;
+            }
+            .patient-name{
+                font-size: 25px;
+                margin: 0;
+                font-weight: 500;
+            }
+            .appointment-footer{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                button{
+                    background-color: $primary-button;
+                }
+            }
+        }
+    }
+    .book-appointment-container{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.318);
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .book-appointment{
+            border-radius: 10px;
+            width: 560px;
+            box-sizing: border-box;
+            background-color: white;
+            padding: 10px 30px;
+            .input-container{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                label{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    input, select{
+                        width: 300px;
+                        border-radius: 5px;
+                        padding: 5px;
+                        font: "inter";
+                    }
+                }
+            }
+            .button-container{
+                margin-top: 15px;
+                display: flex;
+                width: 100%;
+                column-gap: 10px;
+                button{
+                    background-color: $primary-button;
+                }
+            }
+        }
+    }
+    
+}

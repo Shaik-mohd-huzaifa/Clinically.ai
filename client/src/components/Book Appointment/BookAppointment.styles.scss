@@ -1,0 +1,15 @@
+.book-appointment-container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.318);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .book-appointment{
+        width: 600px;
+        background-color: white;
+    }
+}
